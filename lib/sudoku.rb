@@ -1,3 +1,9 @@
 
-# We'll start writing the sudoku logic here soon.
+require 'sudoku/version'
+
+module Sudoku
+  def self.version_string
+    "Sudoku version #{Sudoku::VERSION}"
+  end
+end
 
