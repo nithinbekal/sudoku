@@ -12,6 +12,6 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/nithinbekal/sudoku"
   
   s.files       = Dir.glob("lib/**/*.rb")
-  s.test_files  = Dir.glob("test/**/*.rb")
+  s.test_files  = Dir.glob("{spec,test}/**/*.rb")
 end
 
