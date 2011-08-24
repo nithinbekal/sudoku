@@ -1,10 +1,13 @@
 
 require 'rake/testtask'
+require 'rspec/core/rake_task'
 
 Rake::TestTask.new do |t|
   t.libs << 'test'
 end
 
-desc "Run tests"
-task :default => :test
+RSpec::Core::RakeTask.new('spec')
+
+desc "Run specs"
+task :default => :spec
 
