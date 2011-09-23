@@ -1,4 +1,5 @@
 
+$LOAD_PATH.push File.expand_path("../lib", __FILE__)
 require 'sudoku/version'
 
 Gem::Specification.new do |s|
@@ -14,4 +15,3 @@ Gem::Specification.new do |s|
   s.files       = Dir.glob("lib/**/*.rb")
   s.test_files  = Dir.glob("{spec,test}/**/*.rb")
 end
-
